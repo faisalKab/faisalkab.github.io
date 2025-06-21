@@ -1,68 +1,81 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Faisal Kabir | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header>
-    <div class="container">
-      <h1>Faisal Kabir</h1>
-      <p>Electrical & Software Engineering | Embedded Systems | AI | Hardware Innovator</p>
-    </div>
-  </header>
+/* === Base === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <nav>
-    <div class="container">
-      <a href="#projects">Projects</a>
-      <a href="#resume">Resume</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
+body {
+  font-family: 'IBM Plex Mono', monospace;
+  background-color: #ffffff;
+  color: #222;
+  padding: 2rem;
+  line-height: 1.6;
+}
 
-  <section class="hero">
-    <div class="container">
-      <h2>Welcome to My Engineering Portfolio</h2>
-      <p>A collection of my technical projects, hardware builds, and innovation stories.</p>
-    </div>
-  </section>
+.container {
+  max-width: 700px;
+  margin: auto;
+}
 
-  <section id="projects" class="projects">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="project-grid">
-        <div class="project-card">
-          <h3>Touchless FPGA Maze Game</h3>
-          <video controls src="projects/fpga-maze-demo.mp4"></video>
-          <p>Built a real-time maze system on a DE10-Lite FPGA using IR sensors and servo motors. Controlled entirely via hand gestures. Includes timer, score system, and dual-axis tilt using Verilog.</p>
-          <a href="projects/fpga-maze-report.docx" class="button">Download Report</a>
-        </div>
-      </div>
-    </div>
-  </section>
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
 
-  <section id="resume" class="resume">
-    <div class="container">
-      <h2>Resume</h2>
-      <p><a href="FaisalKabir_Resume.pdf" class="button">Download PDF Resume</a></p>
-    </div>
-  </section>
+.subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
 
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>Email: faisalkabir123@hotmail.com</p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/faisalkabir123" target="_blank">linkedin.com/in/faisalkabir123</a></p>
-    </div>
-  </section>
+.resume-link {
+  display: inline-block;
+  margin-bottom: 2.5rem;
+  color: #0072ff;
+  font-weight: bold;
+  text-decoration: none;
+}
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Faisal Kabir. All rights reserved.</p>
-    </div>
-  </footer>
-</body>
-</html>
+.resume-link:hover {
+  text-decoration: underline;
+}
+
+.project {
+  margin-bottom: 3rem;
+  border-top: 1px solid #ddd;
+  padding-top: 2rem;
+}
+
+.project h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+
+.project .description {
+  margin-bottom: 1rem;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.tags {
+  display: flex;
+  gap: 1rem;
+}
+
+.tag {
+  padding: 0.4rem 0.8rem;
+  background-color: #f0f0f0;
+  color: #0072ff;
+  font-weight: bold;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: background-color 0.2s;
+}
+
+.tag:hover {
+  background-color: #e0e0e0;
+}

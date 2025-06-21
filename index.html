@@ -5,65 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Faisal Kabir | Portfolio</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Faisal Kabir</h1>
-      <p>Electrical & Software Engineering | Embedded Systems | AI | Hardware Innovator</p>
-    </div>
-  </header>
+  <main class="container">
+    <h1>Faisal Kabir</h1>
+    <p class="subtitle">Electrical & Software Engineer | Embedded Systems | Hardware & AI Innovator</p>
+    <a href="FaisalKabir_Resume.pdf" class="resume-link" download>Download Resume (PDF)</a>
 
-  <nav>
-    <div class="container">
-      <a href="#projects">Projects</a>
-      <a href="#resume">Resume</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
-
-  <section class="hero">
-    <div class="container">
-      <h2>Welcome to My Engineering Portfolio</h2>
-      <p>A collection of my technical projects, hardware builds, and innovation stories.</p>
-    </div>
-  </section>
-
-  <section id="projects" class="projects">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="project-grid">
-        <div class="project-card">
-          <h3>Touchless FPGA Maze Game</h3>
-          <video controls src="projects/fpga-maze-demo.mp4"></video>
-          <p>Built a real-time maze system on a DE10-Lite FPGA using IR sensors and servo motors. Controlled entirely via hand gestures. Includes timer, score system, and dual-axis tilt using Verilog.</p>
-          <a href="projects/fpga-maze-report.docx" class="button">Download Report</a>
-        </div>
-        <!-- More project cards to be added here -->
+    <section class="project">
+      <h2>Touchless FPGA Maze Game</h2>
+      <p class="description">
+        Designed a real-time interactive maze game controlled entirely by hand gestures. Built on the DE10-Lite FPGA board, this project uses IR sensors to detect directional input and servo motors for dual-axis tilt. Integrated a timer and score-saving system with HEX display output. Written entirely in Verilog and implemented with physical motion components.
+      </p>
+      <div class="tags">
+        <a href="projects/fpga-maze-report.docx" class="tag">Report</a>
+        <a href="projects/fpga-maze-demo.mp4" class="tag">Video</a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="resume" class="resume">
-    <div class="container">
-      <h2>Resume</h2>
-      <p><a href="FaisalKabir_Resume.pdf" class="button">Download PDF Resume</a></p>
-    </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>Email: faisalkabir123@hotmail.com</p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/faisalkabir123" target="_blank">linkedin.com/in/faisalkabir123</a></p>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Faisal Kabir. All rights reserved.</p>
-    </div>
-  </footer>
+    <!-- Add more projects below as needed -->
+  </main>
 </body>
 </html>
